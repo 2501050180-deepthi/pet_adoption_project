@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet | Paws & Homes</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-sm">
+                <ion-icon name="paw" style="color: var(--primary); font-size: 2rem;"></ion-icon>
+                <span style="font-size: 1.5rem; font-weight: 700;">Paws & Homes</span>
+            </a>
+            <ul class="flex gap-md hidden-mobile">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="adopt.html" class="nav-link active">Adopt a Pet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section" style="background: var(--bg-body); padding-bottom: 2rem;">
+        <div class="container text-center">
+            <h1 style="margin-bottom: 1rem;">Find Your Perfect Companion</h1>
+            <p class="text-muted" style="max-width: 600px; margin: 0 auto 2rem;">Browse our available pets and find the
+                one that speaks to your heart.</p>
+
+            <!-- Filters -->
+            <div class="flex justify-center gap-sm flex-wrap">
+                <button class="btn btn-primary filter-btn active" data-filter="all">All Pets</button>
+                <button class="btn btn-secondary filter-btn" data-filter="dog">Dogs</button>
+                <button class="btn btn-secondary filter-btn" data-filter="cat">Cats</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pets Grid -->
+    <section class="section">
+        <div class="container">
+            <div id="pets-grid" class="grid-3">
+                <!-- Javascript will inject cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div>
+                <div class="flex items-center gap-sm mb-2">
+                    <ion-icon name="paw" style="color: var(--primary); font-size: 1.5rem;"></ion-icon>
+                    <span style="font-size: 1.25rem; font-weight: 700;">Paws & Homes</span>
+                </div>
+                <p class="text-muted">Connecting hearts and paws since 2025.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="adopt.html" class="footer-link">Adopt</a>
+                <a href="#" class="footer-link">Volunteer</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p class="footer-link">hello@pawsandhomes.com</p>
+                <p class="footer-link">1-800-ADOPT-ME</p>
+                <p class="footer-link">123 Shelter Lane</p>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p class="text-muted mb-2">Stay updated on adoption drives.</p>
+                <input type="email" placeholder="Enter your email" class="form-input" style="margin-bottom: 0.5rem;">
+                <button class="btn btn-primary w-100">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="flex justify-between items-center mb-2">
+                <h2>Adopt <span id="modal-pet-name"></span></h2>
+                <button id="close-modal"
+                    style="background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+            </div>
+            <p class="text-muted mb-4">Complete this form to start the adoption process.</p>
+            <form id="adopt-form">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Why do you want to adopt?</label>
+                    <textarea class="form-textarea" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/mock-data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

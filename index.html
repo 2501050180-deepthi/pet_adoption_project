@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Homes | Connect with your new best friend</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Ionicons for Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-sm">
+                <ion-icon name="paw" style="color: var(--primary); font-size: 2rem;"></ion-icon>
+                <span style="font-size: 1.5rem; font-weight: 700;">Paws & Homes</span>
+            </a>
+            <ul class="flex gap-md hidden-mobile">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="adopt.html" class="nav-link">Adopt a Pet</a></li>
+            </ul>
+            <a href="adopt.html" class="btn btn-primary hidden-mobile">Find a Friend</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container mobile-centered">
+            <div class="grid-2 items-center">
+                <div>
+                    <h1>Not just a pet, <br> but a <span style="color: var(--primary);">family member.</span></h1>
+                    <p>Thousands of homeless animals are waiting for a loving home. Open your heart and your door to a furry friend today.</p>
+                    <div class="flex gap-md">
+                        <a href="adopt.html" class="btn btn-primary">Adopt Now</a>
+                        <a href="#featured" class="btn btn-secondary">See Featured</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Happy dog and owner" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Adopt Section -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Why Adopt?</h2>
+            <div class="grid-3">
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <div style="background: var(--primary-light); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <ion-icon name="heart" style="font-size: 2rem; color: var(--primary-dark);"></ion-icon>
+                    </div>
+                    <h3 class="card-title">Save a Life</h3>
+                    <p class="text-muted">By adopting, you give a second chance to an animal in need and make space for others.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <div style="background: var(--secondary); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <ion-icon name="ribbon" style="font-size: 2rem; color: white;"></ion-icon>
+                    </div>
+                    <h3 class="card-title">Loyal Companions</h3>
+                    <p class="text-muted">Shelter pets are often already house-trained and eager to love their new family.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem;">
+                    <div style="background: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <ion-icon name="home" style="font-size: 2rem; color: #FFF;"></ion-icon>
+                    </div>
+                    <h3 class="card-title">Combat Overpopulation</h3>
+                    <p class="text-muted">Adoption reduces the number of strays and supports ethical animal welfare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Pets -->
+    <section id="featured" class="section" style="background-color: white;">
+        <div class="container">
+            <div class="flex justify-between items-center mb-4">
+                <h2>Featured Pets</h2>
+                <a href="adopt.html" style="color: var(--primary); font-weight: 600;">View All &rarr;</a>
+            </div>
+            <p class="text-muted mb-4">Meet some of our adorable residents looking for a home.</p>
+            
+            <div id="featured-grid" class="grid-3">
+                <!-- Javascript will inject cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div>
+                <div class="flex items-center gap-sm mb-2">
+                    <ion-icon name="paw" style="color: var(--primary); font-size: 1.5rem;"></ion-icon>
+                    <span style="font-size: 1.25rem; font-weight: 700;">Paws & Homes</span>
+                </div>
+                <p class="text-muted">Connecting hearts and paws since 2025.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="adopt.html" class="footer-link">Adopt</a>
+                <a href="#" class="footer-link">Volunteer</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p class="footer-link">hello@pawsandhomes.com</p>
+                <p class="footer-link">1-800-ADOPT-ME</p>
+                <p class="footer-link">123 Shelter Lane</p>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p class="text-muted mb-2">Stay updated on adoption drives.</p>
+                <input type="email" placeholder="Enter your email" class="form-input" style="margin-bottom: 0.5rem;">
+                <button class="btn btn-primary w-100">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="flex justify-between items-center mb-2">
+                <h2>Adopt <span id="modal-pet-name"></span></h2>
+                <button id="close-modal" style="background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+            </div>
+            <p class="text-muted mb-4">Complete this form to start the adoption process.</p>
+            <form id="adopt-form">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Why do you want to adopt?</label>
+                    <textarea class="form-textarea" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/mock-data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

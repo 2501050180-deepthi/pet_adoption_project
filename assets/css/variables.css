@@ -1,0 +1,43 @@
+/* Design System Variables */
+:root {
+    /* Colors */
+    --primary: #FF8A65; /* Soft Coral */
+    --primary-dark: #E64A19;
+    --primary-light: #FFCCBC;
+    --secondary: #4DB6AC; /* Soft Teal */
+    --secondary-dark: #00897B;
+    --accent: #FFD54F; /* Amber */
+    
+    --text-main: #2D3748;
+    --text-muted: #718096;
+    --text-light: #FFFFFF;
+    
+    --bg-body: #F7FAFC;
+    --bg-card: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, 0.8);
+    
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    
+    /* Typography */
+    --font-main: 'Outfit', sans-serif;
+    
+    /* Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/* Dark Mode Support (Future proofing) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* --bg-body: #1A202C; */
+        /* --text-main: #F7FAFC; */
+        /* Keep light mode for now as per "clean adoption" aesthetic usually implies light/airy */
+    }
+}
